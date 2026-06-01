@@ -17,16 +17,16 @@
     --sans:'IBM Plex Sans',system-ui,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  html{scroll-behavior:smooth;font-size:118%}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   body::before{content:"";position:fixed;inset:0;background-image:radial-gradient(circle at 18% 12%, rgba(94,246,164,.07), transparent 42%),radial-gradient(circle at 82% 78%, rgba(90,212,255,.06), transparent 45%);pointer-events:none;z-index:0}
   body::after{content:"";position:fixed;inset:0;background-image:linear-gradient(var(--line-soft) 1px, transparent 1px),linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);background-size:42px 42px;opacity:.35;pointer-events:none;z-index:0;mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 80%)}
   .shell{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 28px}
   header.bar{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(10,14,20,.72);border-bottom:1px solid var(--line)}
   .bar-inner{max-width:980px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{font-family:var(--mono);font-size:14px;color:var(--text-dim);letter-spacing:.02em}
+  .brand{font-family:var(--mono);font-size:0.875rem;color:var(--text-dim);letter-spacing:.02em}
   .brand b{color:var(--green);font-weight:600}
-  nav{display:flex;gap:4px;font-family:var(--mono);font-size:13px;flex-wrap:wrap}
+  nav{display:flex;gap:4px;font-family:var(--mono);font-size:0.8125rem;flex-wrap:wrap}
   nav a{color:var(--text-dim);text-decoration:none;padding:6px 11px;border-radius:6px;transition:color .18s ease,background .18s ease}
   nav a:hover{color:var(--green);background:var(--line-soft)}
   nav a .hash{color:var(--text-faint)}
@@ -35,91 +35,91 @@
   .term-head{display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid var(--line);background:var(--bg-soft)}
   .dot{width:11px;height:11px;border-radius:50%}
   .dot.r{background:#ff5f57}.dot.y{background:#febc2e}.dot.g{background:#28c840}
-  .term-title{font-family:var(--mono);font-size:12px;color:var(--text-faint);margin-left:10px}
-  .term-body{padding:30px 28px 34px;font-family:var(--mono);font-size:14px}
+  .term-title{font-family:var(--mono);font-size:0.75rem;color:var(--text-faint);margin-left:10px}
+  .term-body{padding:30px 28px 34px;font-family:var(--mono);font-size:0.875rem}
   .prompt{color:var(--text-dim)}
   .prompt .path{color:var(--cyan)}
   .prompt .cmd{color:var(--text)}
   .out{margin:8px 0 26px;color:var(--text-faint)}
-  h1{font-family:var(--sans);font-weight:600;font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.02em;color:#eef2f7;margin:6px 0 14px}
+  h1{font-family:var(--sans);font-weight:600;font-size:clamp(2.125rem,6vw,3.625rem);line-height:1.05;letter-spacing:-.02em;color:#eef2f7;margin:6px 0 14px}
   h1 .accent{color:var(--green)}
-  .role{font-family:var(--mono);font-size:clamp(14px,2.4vw,18px);color:var(--amber)}
+  .role{font-family:var(--mono);font-size:clamp(0.875rem,2.4vw,1.125rem);color:var(--amber)}
   .role .at{color:var(--text-dim)}
-  .blurb{margin-top:20px;max-width:64ch;color:var(--text-dim);font-family:var(--sans);font-size:16px}
+  .blurb{margin-top:20px;max-width:64ch;color:var(--text-dim);font-family:var(--sans);font-size:1rem}
   .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
-  .btn{font-family:var(--mono);font-size:13px;text-decoration:none;padding:11px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);transition:all .18s ease;display:inline-flex;align-items:center;gap:8px}
+  .btn{font-family:var(--mono);font-size:0.8125rem;text-decoration:none;padding:11px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);transition:all .18s ease;display:inline-flex;align-items:center;gap:8px}
   .btn.primary{background:var(--green);color:#06210f;border-color:var(--green);font-weight:600}
   .btn.primary:hover{box-shadow:0 0 0 4px rgba(94,246,164,.15);transform:translateY(-1px)}
   .btn:hover{border-color:var(--green);color:var(--green)}
   .cursor{display:inline-block;width:9px;height:18px;background:var(--green);margin-left:3px;vertical-align:middle;animation:blink 1.1s steps(2) infinite}
   @keyframes blink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
   section{padding:64px 0;border-top:1px solid var(--line-soft)}
-  .sec-label{font-family:var(--mono);font-size:13px;color:var(--text-faint);margin-bottom:28px;display:flex;align-items:center;gap:10px}
+  .sec-label{font-family:var(--mono);font-size:0.8125rem;color:var(--text-faint);margin-bottom:28px;display:flex;align-items:center;gap:10px}
   .sec-label .n{color:var(--green)}
   .sec-label .ln{flex:1;height:1px;background:var(--line)}
-  h2{font-family:var(--sans);font-weight:600;font-size:clamp(24px,4vw,34px);letter-spacing:-.01em;color:#eef2f7;margin-bottom:8px}
+  h2{font-family:var(--sans);font-weight:600;font-size:clamp(1.5rem,4vw,2.125rem);letter-spacing:-.01em;color:#eef2f7;margin-bottom:8px}
   .about-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:40px;align-items:start}
   .about p{color:var(--text-dim);margin-bottom:16px;max-width:60ch}
   .about p strong{color:var(--text);font-weight:500}
-  .facts{font-family:var(--mono);font-size:13px;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:20px 22px}
+  .facts{font-family:var(--mono);font-size:0.8125rem;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:20px 22px}
   .facts .row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dashed var(--line)}
   .facts .row:last-child{border-bottom:none}
   .facts .k{color:var(--text-faint)}
   .facts .v{color:var(--cyan);text-align:right}
   .facts .v.live{color:var(--green)}
-  .facts .v.live::before{content:"●";font-size:9px;margin-right:6px;vertical-align:middle}
+  .facts .v.live::before{content:"●";font-size:0.5625rem;margin-right:6px;vertical-align:middle}
   .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .skill-cat{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:20px 22px}
-  .skill-cat .ct{font-family:var(--mono);font-size:12px;color:var(--text-faint);margin-bottom:14px}
+  .skill-cat .ct{font-family:var(--mono);font-size:0.75rem;color:var(--text-faint);margin-bottom:14px}
   .skill-cat .ct b{color:var(--amber);font-weight:500}
   .chips{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{font-family:var(--mono);font-size:12.5px;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:5px 11px;background:var(--bg-soft);transition:all .16s ease}
+  .chip{font-family:var(--mono);font-size:0.7812rem;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:5px 11px;background:var(--bg-soft);transition:all .16s ease}
   .chip:hover{border-color:var(--green);color:var(--green)}
   .xp{position:relative;padding-left:30px}
   .xp::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
   .job{position:relative;padding-bottom:36px}
   .job:last-child{padding-bottom:0}
   .job::before{content:"";position:absolute;left:-27px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--green);box-shadow:0 0 0 4px var(--bg)}
-  .job .when{font-family:var(--mono);font-size:12px;color:var(--text-faint)}
-  .job h3{font-family:var(--sans);font-size:18px;font-weight:600;color:#eef2f7;margin:4px 0 2px}
-  .job .co{font-family:var(--mono);font-size:13px;color:var(--amber);margin-bottom:10px}
+  .job .when{font-family:var(--mono);font-size:0.75rem;color:var(--text-faint)}
+  .job h3{font-family:var(--sans);font-size:1.125rem;font-weight:600;color:#eef2f7;margin:4px 0 2px}
+  .job .co{font-family:var(--mono);font-size:0.8125rem;color:var(--amber);margin-bottom:10px}
   .job ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-  .job li{color:var(--text-dim);font-size:15px;padding-left:20px;position:relative}
+  .job li{color:var(--text-dim);font-size:0.9375rem;padding-left:20px;position:relative}
   .job li::before{content:"→";position:absolute;left:0;color:var(--green);font-family:var(--mono)}
   .job li.key{color:var(--text)}
   .job li.key::before{content:"★";color:var(--amber)}
   .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
   .card{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:24px;transition:transform .2s ease,border-color .2s ease;display:flex;flex-direction:column;text-decoration:none;color:inherit}
   .card:hover{transform:translateY(-4px);border-color:var(--green)}
-  .card .icon{font-family:var(--mono);font-size:13px;color:var(--text-faint);margin-bottom:14px}
-  .card h3{font-family:var(--sans);font-size:19px;font-weight:600;color:#eef2f7;margin-bottom:8px}
-  .card p{color:var(--text-dim);font-size:14.5px;flex:1}
+  .card .icon{font-family:var(--mono);font-size:0.8125rem;color:var(--text-faint);margin-bottom:14px}
+  .card h3{font-family:var(--sans);font-size:1.1875rem;font-weight:600;color:#eef2f7;margin-bottom:8px}
+  .card p{color:var(--text-dim);font-size:0.9062rem;flex:1}
   .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
-  .tag{font-family:var(--mono);font-size:11px;color:var(--cyan);border:1px solid var(--line);border-radius:5px;padding:3px 9px}
-  .card .arrow{margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--text-faint);transition:color .2s}
+  .tag{font-family:var(--mono);font-size:0.6875rem;color:var(--cyan);border:1px solid var(--line);border-radius:5px;padding:3px 9px}
+  .card .arrow{margin-top:16px;font-family:var(--mono);font-size:0.75rem;color:var(--text-faint);transition:color .2s}
   .card:hover .arrow{color:var(--green)}
-  .note{font-family:var(--mono);font-size:12.5px;color:var(--text-faint);border:1px dashed var(--line);border-radius:8px;padding:14px 16px;margin-bottom:20px}
+  .note{font-family:var(--mono);font-size:0.7812rem;color:var(--text-faint);border:1px dashed var(--line);border-radius:8px;padding:14px 16px;margin-bottom:20px}
   .note b{color:var(--amber);font-weight:500}
-  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
   .edu{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:22px}
-  .edu .deg{font-family:var(--sans);font-size:17px;font-weight:600;color:#eef2f7;margin-bottom:4px}
-  .edu .school{font-family:var(--mono);font-size:13px;color:var(--cyan)}
+  .edu .deg{font-family:var(--sans);font-size:1.0625rem;font-weight:600;color:#eef2f7;margin-bottom:4px}
+  .edu .school{font-family:var(--mono);font-size:0.8125rem;color:var(--cyan)}
   .certs{margin-top:26px;display:flex;flex-direction:column;gap:2px}
   .cert{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:16px 0;border-bottom:1px solid var(--line-soft)}
   .cert:last-child{border-bottom:none}
-  .cert .yr{font-family:var(--mono);font-size:14px;color:var(--amber);font-weight:500}
-  .cert h3{font-family:var(--sans);font-size:16px;font-weight:600;color:#eef2f7}
-  .cert p{color:var(--text-dim);font-size:14px}
+  .cert .yr{font-family:var(--mono);font-size:0.875rem;color:var(--amber);font-weight:500}
+  .cert h3{font-family:var(--sans);font-size:1rem;font-weight:600;color:#eef2f7}
+  .cert p{color:var(--text-dim);font-size:0.875rem}
   .contact{text-align:center;padding:80px 0}
   .contact .sec-label{justify-content:center}
   .contact .ln{display:none}
-  .contact h2{font-size:clamp(28px,5vw,40px);margin-bottom:12px}
+  .contact h2{font-size:clamp(1.75rem,5vw,2.5rem);margin-bottom:12px}
   .contact p{color:var(--text-dim);max-width:50ch;margin:0 auto 30px}
   .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .links a{font-family:var(--mono);font-size:13px;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:12px 20px;transition:all .18s ease;display:inline-flex;gap:9px;align-items:center}
+  .links a{font-family:var(--mono);font-size:0.8125rem;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:8px;padding:12px 20px;transition:all .18s ease;display:inline-flex;gap:9px;align-items:center}
   .links a:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
   .links a .s{color:var(--text-faint)}
-  footer{border-top:1px solid var(--line);padding:30px 0;font-family:var(--mono);font-size:12px;color:var(--text-faint)}
+  footer{border-top:1px solid var(--line);padding:30px 0;font-family:var(--mono);font-size:0.75rem;color:var(--text-faint)}
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   ::-webkit-scrollbar{width:11px}
@@ -177,7 +177,7 @@
           <a href="#contact" class="btn primary">→ Get in touch</a>
           <a href="#experience" class="btn">View experience</a>
         </div>
-        <div style="margin-top:26px;font-family:var(--mono);font-size:13px;color:var(--text-faint)">
+        <div style="margin-top:26px;font-family:var(--mono);font-size:0.8125rem;color:var(--text-faint)">
           <span class="prompt"><span class="path">peter@workstation</span>:~$ </span><span class="cursor"></span>
         </div>
       </div>
@@ -261,10 +261,13 @@
         <h3>Senior Staff Product Engineer</h3>
         <div class="co">Medidata Solutions</div>
         <ul>
-          <li>Enhance microservices and security platforms supporting client trial operations using C# / .NET Core, React/Redux, Ruby on Rails, and AWS (ECS, SQS, S3, CodeBuild).</li>
-          <li>Deliver complex product launches in a highly regulated, life-science environment.</li>
-          <li>Advocate sound SDLC practices — code reviews, continuous integration &amp; deployment, and test automation.</li>
-          <li>Analyze application performance with SumoLogic and New Relic and implement remediations; collaborate closely with QA and product within Agile teams.</li>
+          <li>Led cross-functional engineering teams building secure, scalable systems that power clinical research — serving as technical authority for the Study Design team and guiding architectural decisions that improved system reliability.</li>
+          <li class="key">Drove enterprise-wide platform modernization — Kubernetes adoption, GitHub Actions CI/CD pipelines, and an AWS multi-account strategy — reducing infrastructure costs while cutting deployment time.</li>
+          <li>Architected and implemented secure, scalable microservices, user interfaces, and AI services in C#, Python, Ruby on Rails, TypeScript, and SQL, leveraging AWS S3, SQS, EKS, and Bedrock.</li>
+          <li>Championed adoption of the GitHub Copilot coding agent across the SDLC — integrating it into code-review and code-generation workflows to accelerate development cycles and improve code quality.</li>
+          <li>Partnered with product management, clinical experts, and customers to define the technical roadmap and product strategy, translating regulatory requirements and user needs into system designs that accelerated feature delivery.</li>
+          <li>Established observability best practices with SumoLogic, Grafana, and sysdig to monitor production performance, proactively resolving bottlenecks and improving mean time to resolution.</li>
+          <li>Mentored 10+ engineers from junior to senior level through code reviews, weekly design reviews, and annual evaluations, while removing organizational blockers to increase team velocity.</li>
         </ul>
       </div>
       <div class="job reveal">
@@ -343,6 +346,10 @@
   <section id="education">
     <div class="sec-label reveal"><span class="n">05.</span> // education &amp; certifications <span class="ln"></span></div>
     <div class="edu-grid">
+      <div class="edu reveal">
+        <div class="deg">M.S., Artificial Intelligence</div>
+        <div class="school">University of Texas at Austin · expected 2027</div>
+      </div>
       <div class="edu reveal">
         <div class="deg">M.S., Computer Science</div>
         <div class="school">North Carolina State University</div>

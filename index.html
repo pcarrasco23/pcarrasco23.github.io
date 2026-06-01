@@ -24,7 +24,8 @@
   .shell{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 28px}
   header.bar{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(10,14,20,.72);border-bottom:1px solid var(--line)}
   .bar-inner{max-width:980px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .brand{font-family:var(--mono);font-size:0.875rem;color:var(--text-dim);letter-spacing:.02em}
+  .brand{font-family:var(--mono);font-size:0.875rem;color:var(--text-dim);letter-spacing:.02em;text-decoration:none;transition:color .18s ease}
+  .brand:hover b{color:var(--cyan)}
   .brand b{color:var(--green);font-weight:600}
   nav{display:flex;gap:4px;font-family:var(--mono);font-size:0.8125rem;flex-wrap:wrap}
   nav a{color:var(--text-dim);text-decoration:none;padding:6px 11px;border-radius:6px;transition:color .18s ease,background .18s ease}
@@ -144,11 +145,11 @@
   }
 </style>
 </head>
-<body>
+<body id="top">
 
 <header class="bar">
   <div class="bar-inner">
-    <div class="brand">~/<b>peter-carrasco</b></div>
+    <a href="#top" class="brand">~/<b>peter-carrasco</b></a>
     <nav>
       <a href="#about"><span class="hash">#</span>about</a>
       <a href="#skills"><span class="hash">#</span>skills</a>
@@ -200,19 +201,13 @@
       <div class="reveal">
         <h2>A bit about me</h2>
         <p style="margin-top:14px">
-          I'm a software engineer and engineering leader with a track record of delivering
-          <strong>large-scale distributed, cloud-based systems</strong> built on clean, well-tested, and
-          scalable code. I've coordinated complex development projects end-to-end — from initial
-          requirements through design, development, testing, implementation, and ongoing support.
+          I'm a software engineer and engineering leader who delivers
+          <strong>large-scale distributed, cloud-based systems</strong> on clean, well-tested,
+          scalable code — across regulated, high-stakes domains like clinical-trial operations
+          and consumer e-commerce.
         </p>
         <p>
-          My work spans regulated, high-stakes domains like clinical-trial operations and consumer
-          e-commerce, where reliability and security aren't optional. I advocate for sound engineering
-          practice — code reviews, continuous integration and deployment, and test automation — and I
-          enjoy mentoring engineers and turning great ideas into shipped products.
-        </p>
-        <p>
-          I'm passionate about solving difficult challenges with innovative solutions, and I'm open to
+          I lead teams, champion sound engineering practice, and mentor engineers. Open to
           conversations about engineering roles, research collaborations, and new partnerships.
         </p>
       </div>
